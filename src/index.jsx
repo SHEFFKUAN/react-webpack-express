@@ -1,8 +1,7 @@
 var React         = require('react'),
-    ReactDOM      = require('react-dom'),
-    TestComponent = require('./components/TestComponent.jsx');
+    ReactDOM      = require('react-dom');
 
 ReactDOM.render(
-  <TestComponent/>,
+  <div>Test Index</div>,
   document.getElementById("react-container")
 );

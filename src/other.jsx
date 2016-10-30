@@ -1,17 +1,10 @@
-var React    = require('react'),
-    ReactDOM = require('react-dom');
+const React = require('react');
+const ReactDOM = require('react-dom');
 
-
-var AnotherComponent = React.createClass({
-  render: function() {
-    return (
-      <div>Hello Again</div>
-    );
-  }
-});
-
+const OtherComponent = () =>
+  <div>Other Page</div>;
 
 ReactDOM.render(
-  <AnotherComponent/>,
-  document.getElementById("react-container")
+  <OtherComponent />,
+  document.getElementById('react-container')
 );

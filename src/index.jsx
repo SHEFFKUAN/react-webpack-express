@@ -1,7 +1,10 @@
-var React         = require('react'),
-    ReactDOM      = require('react-dom');
+const React = require('react');
+const ReactDOM = require('react-dom');
+
+const IndexComponent = () =>
+  <div>Index Page</div>;
 
 ReactDOM.render(
-  <div>Test Index</div>,
-  document.getElementById("react-container")
+  <IndexComponent />,
+  document.getElementById('react-container')
 );

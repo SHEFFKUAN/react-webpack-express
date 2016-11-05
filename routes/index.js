@@ -1,14 +1,12 @@
 const express = require('express');
-
 const router = express.Router();
 
-/* GET home page. */
-router.get('/', (req, res) => {
-  res.render('index', { title: 'Main' });
-});
+/* GET api.*/
+// todo
 
-router.get('/other', (req, res) => {
-  res.render('other', { title: 'Other' });
+/* GET page. */
+router.get('*', (req, res) => {
+  res.render('app', { title: 'App' });
 });
 
 module.exports = router;
